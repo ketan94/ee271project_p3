@@ -1,0 +1,82 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : rast
+Version: M-2016.12-SP2
+Date   : Sat Mar 24 02:18:01 2018
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: MLCOM   Library: tcbn45gsbwpml
+Wire Load Model Mode: top
+
+  Startpoint: hash_jtree/d_hash_f3/dff_0/dff/data_pipe_a_reg[1][18]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sampletest/DP_OP_25J2_124_4838/clk_r_REG16_S7
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  rast               TSMC32K_Lowk_Conservative
+                                           tcbn45gsbwpml
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  hash_jtree/d_hash_f3/dff_0/dff/data_pipe_a_reg[1][18]/CP (DFCNQD4BWP)
+                                                        0.0000 #   0.0000 r
+  hash_jtree/d_hash_f3/dff_0/dff/data_pipe_a_reg[1][18]/Q (DFCNQD4BWP)
+                                                        0.0453     0.0453 r
+  U5447/ZN (INVD6BWP)                                   0.0134     0.0587 f
+  U1128/ZN (ND2D1BWP)                                   0.0154     0.0741 r
+  U1126/ZN (OAI21D1BWP)                                 0.0184     0.0925 f
+  U7352/ZN (AOI21D4BWP)                                 0.0189     0.1114 r
+  U7361/ZN (OAI21D4BWP)                                 0.0122     0.1237 f
+  U5104/ZN (INR2D4BWP)                                  0.0145     0.1382 f
+  U5037/ZN (NR3D1BWP)                                   0.0184     0.1565 r
+  U1147/ZN (OAI21D1BWP)                                 0.0173     0.1738 f
+  U1145/ZN (AOI21D2BWP)                                 0.0261     0.1999 r
+  U1144/ZN (OAI211D4BWP)                                0.0186     0.2186 f
+  U5116/ZN (AOI21D4BWP)                                 0.0150     0.2336 r
+  U1060/Z (XOR2D1BWP)                                   0.0260     0.2596 r
+  U4989/ZN (INVD3BWP)                                   0.0583     0.3179 f
+  U9143/ZN (NR2D1BWP)                                   0.0317     0.3496 r
+  U2847/S (FA1D0BWP)                                    0.0527     0.4023 f
+  U9706/S (FA1D0BWP)                                    0.0499     0.4522 r
+  U9655/S (FA1D0BWP)                                    0.0469     0.4991 f
+  U9658/CO (FA1D0BWP)                                   0.0477     0.5467 f
+  U1250/S (FA1D0BWP)                                    0.0557     0.6025 r
+  U9723/CO (FA1D0BWP)                                   0.0458     0.6483 r
+  U9836/S (FA1D0BWP)                                    0.0498     0.6981 f
+  U9724/ZN (NR2D1BWP)                                   0.0194     0.7175 r
+  U9730/ZN (OAI21D1BWP)                                 0.0110     0.7286 f
+  U9731/ZN (AOI21D1BWP)                                 0.0177     0.7463 r
+  U9840/ZN (OAI21D1BWP)                                 0.0099     0.7562 f
+  U9960/ZN (AOI21D1BWP)                                 0.0127     0.7689 r
+  U4987/Z (OA21D1BWP)                                   0.0178     0.7867 r
+  U5140/ZN (OAI211D2BWP)                                0.0109     0.7976 f
+  sampletest/DP_OP_25J2_124_4838/clk_r_REG16_S7/D (DFCNQD2BWP)
+                                                        0.0000     0.7976 f
+  data arrival time                                                0.7976
+
+  clock clk (rise edge)                                 0.8000     0.8000
+  clock network delay (ideal)                           0.0000     0.8000
+  sampletest/DP_OP_25J2_124_4838/clk_r_REG16_S7/CP (DFCNQD2BWP)
+                                                        0.0000     0.8000 r
+  library setup time                                   -0.0024     0.7976
+  data required time                                               0.7976
+  --------------------------------------------------------------------------
+  data required time                                               0.7976
+  data arrival time                                               -0.7976
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0000
+
+
+1

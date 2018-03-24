@@ -1,0 +1,3 @@
+SUID, Name, Email, $nInstances, $totalPower, $totalArea,$verifStatus, $synthPass,$synthClock, $synthTmax, $Perf, $throughput, $synthPower, $synthArea, $synthDynPower, $synthLeakPower
+Ketan Pant, 06185992, ketan94@stanford.edu, 9, 481.1139, 346655.633634,1, 1,0.8, 0.8, 22.088070, 17.670456, 53.4571, 38517.292626, 22.0917, 31.3654
+Abhishek Roushan, 06118410, aroushan@stanford.edu, 9, 481.1139, 346655.633634,1, 1,0.8, 0.8, 22.088070, 17.670456, 53.4571, 38517.292626, 22.0917, 31.3654
